@@ -46,7 +46,7 @@ A comprehensive Ride Sharing System implementation in Java demonstrating Object-
 
 ## Design Patterns Used
 
-### 1. Factory Pattern (10 marks)
+### 1. Factory Pattern 
 **Location**: `RideSharing/Vehicles/`
 - **IVehicle.java**: Interface defining vehicle behavior
 - **Bike.java, CNG.java, Car.java**: Concrete vehicle implementations
@@ -57,7 +57,7 @@ A comprehensive Ride Sharing System implementation in Java demonstrating Object-
 IVehicle vehicle = VehicleFactory.CreateVehicle("Bike");
 ```
 
-### 2. Inheritance & Polymorphism (10 marks)
+### 2. Inheritance & Polymorphism 
 **Location**: `RideSharing/Users/`
 - **User.java**: Abstract base class with common properties (Id, Name, Phone)
 - **Rider.java**: Extends User, adds wallet balance
@@ -69,7 +69,7 @@ User user = new Rider("RID001", "John", "123456", 100.0);
 user.DisplayInfo(); // Calls Rider's implementation
 ```
 
-### 3. Singleton Pattern (8 marks)
+### 3. Singleton Pattern 
 **Location**: `RideSharing/Management/RideManager.java`
 - Ensures only one instance of RideManager exists
 - Manages all drivers, riders, and rides centrally
@@ -79,7 +79,7 @@ user.DisplayInfo(); // Calls Rider's implementation
 RideManager manager = RideManager.GetInstance();
 ```
 
-### 4. Strategy Pattern (8 marks)
+### 4. Strategy Pattern 
 **Location**: `RideSharing/Pricing/`
 - **IPricingStrategy.java**: Interface for pricing algorithms
 - **StandardPricing.java**: $0.50/km
@@ -92,7 +92,7 @@ ride.SetPricingStrategy(new RushHourPricing());
 double fare = ride.getFare();
 ```
 
-### 5. Adapter Pattern (8 marks)
+### 5. Adapter Pattern 
 **Location**: `RideSharing/Payments/`
 - **IPaymentProcessor.java**: Common payment interface
 - **BkashPaymentGateway.java**: External bKash API (provided)
@@ -105,7 +105,7 @@ IPaymentProcessor processor = new BkashPaymentAdapter();
 String txnId = processor.Pay("phone_number", 25.50);
 ```
 
-### 6. Observer Pattern (6 marks)
+### 6. Observer Pattern 
 **Location**: `RideSharing/Observers/`
 - **IRideObserver.java**: Observer interface
 - **RiderNotifier.java**: SMS notification to riders
