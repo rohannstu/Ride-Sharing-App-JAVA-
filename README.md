@@ -181,21 +181,3 @@ Requested -> Accepted -> In Progress -> Completed
 5. **Payment Processing**: Process bKash/Credit Card payments
 6. **View All Data**: Display all system data
 
-## Evaluation Criteria Met
-
-| Criteria | Marks | Status |
-|----------|-------|--------|
-| Factory Pattern | 10 | Implemented |
-| Inheritance & Polymorphism | 10 | Implemented |
-| Singleton Pattern | 8 | Implemented |
-| Strategy Pattern | 8 | Implemented |
-| Adapter Pattern | 8 | Implemented |
-| Observer Pattern | 6 | Implemented |
-| Code Quality & Organization | 5 | Implemented |
-| README Documentation | 5 | Implemented |
-| **Total** | **60** | **Complete** |
-
----
-
-Built with Java OOP and Design Patterns
-"# Ride-Sharing-App-JAVA-"  
